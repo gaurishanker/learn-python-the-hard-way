@@ -6,19 +6,21 @@ eyes = 'Blue'
 teeth = 'White'
 hair = 'Brown'
 
-print "Let's talk about %s." % name
-print "He's %d inches tall." % height
-print "He's %d pounds heavy." % weight
-print "Actually that's not too heavy."
-print "He's got %s eyes and %s hair." % (eyes, hair)
-print "His teeth are usually %s depending on the coffee." % teeth
+print(f"let's talk about {name}")
+print(f"He's {height} inches tall.")
+print(f"He's {weight} pounds heavy.")
+print("Actually that's not too heavy.")
+print(f"He's got {eyes} eyes and {hair} hair.")
+print(f"His teeth are usually {teeth} depending on the coffee.")
 
 # this line is tricky, try to get it exactly right
-print "If I add %d, %d, and %d I get %d." % (age, height, weight, age + height + weight)
+total = age + height + weight 
+print(f"If I add {age}, {height}, and {weight} I get {total}.")
 
-#program to convert inches to centimeters and pounds to kilogram
-inches_to_centimeters = 2.54
-pounds_to_kg = 0.453592
-
-print "4 cm in inches is %f inches"  % (4 / inches_to_centimeters)
-print "10 kilograms in pound is %f pounds" %(10 / pounds_to_kg)
+#program for inches to centimeters and pounds to kg
+inches = 12
+centimeters = 2.54 * inches
+pounds = 12
+kg = pounds * 0.453592
+print(f"{inches} inches is {centimeters} in centimeters")
+print(f"{pounds} pounds is {kg} in kg")
